@@ -29,15 +29,16 @@
 html {
   font-size: 16px;
 }
+
 body {
   font-family: var(--ff-sans);
-  
 }
 
 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
