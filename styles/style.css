@@ -26,6 +26,7 @@ html {
 body {
   font-family: var(--ff-sans);
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -240,4 +241,95 @@ button:hover {
 .fa-brands:hover {
   color: var(--clr-pink);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-size: cover;
+  }
+
+  .navbar__logo-container {
+    width: 7rem;
+  }
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 2.5rem 2rem;
+    margin: 0 0 6rem 0;
+    text-align: left;
+  }
+
+  .card__one__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 2rem;
+    padding: 0 1rem 0 1.5rem;
+  }
+
+  .card__two__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+    padding: 0 1rem 0 1.5rem;
+  }
+  .card__one__image,
+  .card__two__image {
+    width: 100%;
+    margin: 1.5rem;
+  }
+
+  .cards__description {
+    text-align: left;
+  }
+
+  .cards__paragraph {
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .cta__container {
+    margin: 6rem 10rem;
+    padding: 2.5rem 0.7rem 2rem 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card__one__container {
+    margin: 0 2rem;
+    padding: 2rem 4rem;
+    gap: 5rem;
+    justify-content: space-around;
+  }
+
+  .card__two__container {
+    padding: 2rem;
+    margin: 0 2rem;
+    gap: 5rem;
+    justify-content: space-around;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .menu__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+
+  .menu__details__three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
 }
